@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Cognitive Load Test</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cogni+</a>
+        </div>
+    </nav>
+    <nav class="navbar bg-primary" data-bs-theme="dark"></nav>
+    <nav class="navbar" style="background-color: #e3f2fd;"></nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Cognitive Load Test</h2>
+
+        <!-- Question 1 -->
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Question 1: What is the capital of France?</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+                    <label class="form-check-label" for="q1a">a) London</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                    <label class="form-check-label" for="q1b">b) Paris</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+                    <label class="form-check-label" for="q1c">c) Berlin</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1d" value="d">
+                    <label class="form-check-label" for="q1d">d) Egypt</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Question 2: What is the largest planet in our solar system?</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+                    <label class="form-check-label" for="q2a">a) Earth</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+                    <label class="form-check-label" for="q2b">b) Jupiter</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+                    <label class="form-check-label" for="q2c">c) Mars</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Question 3: Who wrote "Romeo and Juliet"?</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+                    <label class="form-check-label" for="q3a">a) William Shakespeare</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+                    <label class="form-check-label" for="q3b">b) Jane Austen</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+                    <label class="form-check-label" for="q3c">c) Charles Dickens</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center mt-4">
+            <button type="button" class="btn btn-primary" onclick="submitQuiz()">Submit Answers</button>
+        </div>
+
+        <!-- Result Message -->
+        <div id="resultMessage" class="text-center mt-3"></div>
+
+    </div>
+
+    <script>
+        function submitQuiz() {
+            const q1Answer = document.querySelector('input[name="q1"]:checked');
+            const q2Answer = document.querySelector('input[name="q2"]:checked');
+            const q3Answer = document.querySelector('input[name="q3"]:checked');
+
+            if (q1Answer && q2Answer && q3Answer) {
+                const correctAnswers = 0; // Replace with the correct answers count
+                const userScore = (q1Answer.value === 'b') + (q2Answer.value === 'b') + (q3Answer.value === 'a');
+
+                document.getElementById("resultMessage").innerHTML = `<p>Your Score: ${userScore} out of ${correctAnswers}</p>`;
+            } else {
+                document.getElementById("resultMessage").innerHTML = "<p>Please answer all questions.</p>";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

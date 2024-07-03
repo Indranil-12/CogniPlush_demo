@@ -1,0 +1,52 @@
+const quizData = {
+    {
+        id: 1,
+        question: "I accept responsibility for my reactions",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 2,
+        question: "I find it easy to make goals and stick with them",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 3,
+        question: "I am an emotionally balanced person",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 4,
+        question: "I am a very patient person",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 5,
+        question: "I can accept critical comments from others without becoming angry",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 6,
+        question: "I maintain my composure, even during stressful times",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 7,
+        question: "If an issue does not affect me directly, I don’t let it bother me",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 8,
+        question: "I can restrain myself when I feel anger towards someone",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 9,
+        question: "I control urges to overindulge in things that could damage my well being",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 10,
+        question: "I direct my energy into creative work or hobbies",
+        options: ['1','2','3','4','5'],
+    },
+};

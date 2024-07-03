@@ -1,0 +1,52 @@
+const quizData = {
+    {
+        id: 1,
+        question: My fellings are clear to me at any given moment",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 2,
+        question: "Emotions play an important part in my life",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 3,
+        question: "My moods impact the people around me",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 4,
+        question: "I find it easy to put words to my feelings",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 5,
+        question: "My moods are easily affected by external events",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 6,
+        question: "I can easily sense when I’m going to be angry",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 7,
+        question: "I readily tell others my true feelings",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 8,
+        question: "I find it easy to describe my feelings",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 9,
+        question: "Even when I’m upset, I’m aware of what’s happening to me",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 10,
+        question: "I am able to stand apart from my thoughts and feelings and examine them",
+        options: ['1','2','3','4','5'],
+    },
+};

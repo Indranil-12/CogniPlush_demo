@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>EI Test</title>
+  <style>
+    .survey-question {
+      margin-bottom: 30px;
+    }
+
+    .form-check-label {
+      margin-right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cogni+</a>
+    </div>
+  </nav>
+  <nav class="navbar bg-primary" data-bs-theme="dark"></nav>
+  <nav class="navbar" style="background-color: #e3f2fd;"></nav>
+
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <h1><strong>Emotional Intelligence Self-Assessment</strong></h1>
+    </div>
+    <div>
+      <h4><i>Rank each Statement as follows:---1(Never)---2(Rarely)---3(Sometimes)---4(Often)---5(Always)</i></h4><br>
+    </div>
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="survey-question">
+            <label for="question1">My fillings are clear to me at any given point</label>
+          </div>
+
+          <div class="survey-question">
+            <label for="question2">Emotions play an important part in my life</label>
+          </div>
+
+          <!-- Add more questions here following the same structure -->
+        </div>
+
+        <div class="col-md-6">
+          <div class="survey-question">
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="question1" value="1" id="q1-1">
+              <label class="form-check-label" for="q1-1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="question1" value="2" id="q1-2">
+              <label class="form-check-label" for="q1-2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="question1" value="3" id="q1-3">
+              <label class="form-check-label" for="q1-3">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="question1" value="4" id="q1-4">
+              <label class="form-check-label" for="q1-4">4</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="question1" value="5" id="q1-5">
+              <label class="form-check-label" for="q1-5">5</label>
+            </div>
+          </div>
+
+          <div class="survey-question">
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="question2" value="1" id="q2-1">
+              <label class="form-check-label" for="q2-1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="question2" value="2" id="q2-2">
+              <label class="form-check-label" for="q2-2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="question2" value="3" id="q2-3">
+              <label class="form-check-label" for="q2-3">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="question2" value="4" id="q2-4">
+              <label class="form-check-label" for="q2-4">4</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="question2" value="5" id="q2-5">
+              <label class="form-check-label" for="q2-5">5</label>
+            </div>
+          </div>
+
+          <!-- Add more questions here following the same structure -->
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

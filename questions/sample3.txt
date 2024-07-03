@@ -1,0 +1,52 @@
+const quizData = {
+    {
+        id: 1,
+        question: "I consider the impact of my decisions on other people",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 2,
+        question: "I can tell easily tell if the people around me are becoming annoyed",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 3,
+        question: "I sense it when a person’s mood changes",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 4,
+        question: "I am able to be supportive when giving bad news to others",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 5,
+        question: "I am generally able to understand the way other people feel",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 6,
+        question: "My friends can tell me intimate things about themselves",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 7,
+        question: "It genuinely bothers me to see other people suffer",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 8,
+        question: "I usually know when to speak and when to be silent",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 9,
+        question: "I care what happens to other people",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 10,
+        question: "I understand when people’s plans change",
+        options: ['1','2','3','4','5'],
+    },
+};

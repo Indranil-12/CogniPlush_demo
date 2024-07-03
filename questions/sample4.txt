@@ -1,0 +1,52 @@
+const quizData = {
+    {
+        id: 1,
+        question: "I am able to show affection",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 2,
+        question: "My relationships are safe places for me",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 3,
+        question: "I find it easy to share my deep feelings with others",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 4,
+        question: "I am good at motivating others",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 5,
+        question: "I am a fairly cheerful person",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 6,
+        question: "It is easy for me to make friends",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 7,
+        question: "People tell me I am sociable and fun",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 8,
+        question: "I like helping people",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 9,
+        question: "Others can depend on me",
+        options: ['1','2','3','4','5'],
+    },
+    {
+        id: 10,
+        question: "I am able to talk someone down if they are very upset",
+        options: ['1','2','3','4','5'],
+    },
+};

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Working Memory Test</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cogni+</a>
+        </div>
+    </nav>
+    <nav class="navbar bg-primary" data-bs-theme="dark"></nav>
+    <nav class="navbar" style="background-color: #e3f2fd;"></nav>
+    <br>
+    <div class="d-flex justify-content-center">
+        <nav aria-label="...">
+            <ul class="pagination pagination-lg">
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container mt-5">
+        <h2 class="text-center">Working Memory Test</h2>
+
+        <div class="text-center mb-3">
+            <p class="lead">Memorize the sequence of digits:</p>
+            <h4 id="digitSequence">1 5 8 2 7</h4>
+        </div>
+
+        <!-- Input Section -->
+        <form id="digitInputForm">
+            <div class="form-group text-center">
+                <label for="userInput">Enter the digits:</label>
+                <input type="text" class="form-control" id="userInput" placeholder="Enter digits separated by spaces"
+                    required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="checkUserInput()">Submit</button>
+        </form>
+
+        <p id="resultMessage" class="text-center mt-3"></p>
+    </div>
+
+    <script>
+        function checkUserInput() {
+            const sequence = "1 5 8 2 7"; // Replace with your sequence
+            const userInput = document.getElementById("userInput").value.trim();
+
+            if (userInput === sequence) {
+                document.getElementById("resultMessage").innerText = "Correct! Well done.";
+            } else {
+                document.getElementById("resultMessage").innerText = "Incorrect. Try again.";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
